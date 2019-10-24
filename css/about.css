@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.red {
+  color: #ff4f4c;
+}
+a {
+  text-decoration: none;
+  color: #808080;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #3877d9;
+}
+.email {
+  text-decoration: none;
+  color: #25569d;
+  transition: none;
+}
+.email:hover {
+  color: #25569d;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 930px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.namecard::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.namecard .avatar {
+  float: left;
+  padding: 0;
+}
+.namecard .avatar img {
+  width: 230px;
+}
+.namecard .information {
+  display: inline-block;
+  margin-left: 20px;
+  max-width: calc(100% - 250px);
+}
+.namecard .information p {
+  padding-bottom: 10px;
+}
+@media (max-width: 861px) {
+  .namecard .avatar {
+    float: none;
+  }
+  .namecard .avatar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .namecard .information {
+    margin-top: 20px;
+    display: block;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+.author {
+  color: #4a4a4a;
+}
+.author strong {
+  color: #000;
+}
+.publication {
+  margin-top: 10px;
+}
+.publication .item {
+  margin-top: 20px;
+}
+.publication .item .information {
+  margin-left: 20px;
+  float: right;
+  width: calc(100% - 340px);
+}
+.publication .item .information div {
+  padding-bottom: 5px;
+}
+.publication .item .information .title {
+  max-width: 450px;
+}
+.publication .item .information .year {
+  padding-left: 10px;
+  display: block;
+  float: right;
+}
+.publication .item .avatar {
+  float: left;
+  padding: 0;
+}
+.publication .item .avatar img {
+  width: 320px;
+}
+.publication .item::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+@media (max-width: 861px) {
+  .publication .item .avatar img {
+    width: 280px;
+  }
+  .publication .item .information {
+    width: calc(100% - 300px);
+  }
+}
+@media (max-width: 700px) {
+  .publication .item .information {
+    float: none;
+    width: 100%;
+    clear: both;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .publication .item .avatar {
+    float: inherit;
+  }
+  .publication .item .avatar img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.award {
+  margin-top: 10px;
+}
+.award .item {
+  margin-top: 5px;
+}
+.award .item .year {
+  float: right;
+}
+@media (max-width: 861px) {
+  .award ul {
+    padding-left: 20px;
+  }
+}
+.project {
+  margin-top: 10px;
+}
