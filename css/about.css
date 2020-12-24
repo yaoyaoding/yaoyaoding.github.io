@@ -22,9 +22,6 @@ a:hover {
 .email:hover {
   color: #25569d;
 }
-.github {
-  content: "\f09b";
-}
 .container {
   margin-left: auto;
   margin-right: auto;
