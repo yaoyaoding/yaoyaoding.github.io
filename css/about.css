@@ -7,8 +7,9 @@
 }
 a {
   text-decoration: none;
-  color: #808080;
+  color: #ac1313;
   transition: all 0.3s;
+  target: "_blank";
 }
 a:hover {
   color: #3877d9;
@@ -21,10 +22,13 @@ a:hover {
 .email:hover {
   color: #25569d;
 }
+.github {
+  content: "\f09b";
+}
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 930px;
+  max-width: 860px;
   margin-top: 30px;
   margin-bottom: 30px;
   padding-left: 15px;
@@ -38,15 +42,15 @@ a:hover {
 }
 .namecard .avatar {
   float: left;
-  padding: 0;
+  vertical-align: middle;
 }
 .namecard .avatar img {
-  width: 230px;
+  width: 260px;
 }
 .namecard .information {
   display: inline-block;
-  margin-left: 20px;
-  max-width: calc(100% - 250px);
+  margin-left: 10px;
+  max-width: calc(100% - 270px);
 }
 .namecard .information p {
   padding-bottom: 10px;
@@ -77,15 +81,12 @@ a:hover {
   margin-top: 10px;
 }
 .publication .item {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .publication .item .information {
-  margin-left: 20px;
-  float: right;
-  width: calc(100% - 340px);
 }
 .publication .item .information div {
-  padding-bottom: 5px;
+  /*padding-bottom: 5px;*/
 }
 .publication .item .information .title {
   max-width: 450px;
@@ -108,32 +109,18 @@ a:hover {
   height: 0;
   clear: both;
 }
-@media (max-width: 861px) {
-  .publication .item .avatar img {
-    width: 280px;
-  }
-  .publication .item .information {
-    width: calc(100% - 300px);
-  }
+
+.experience {
+  margin-top: 10px;
 }
-@media (max-width: 700px) {
-  .publication .item .information {
-    float: none;
-    width: 100%;
-    clear: both;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .publication .item .avatar {
-    float: inherit;
-  }
-  .publication .item .avatar img {
-    display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.experience .item {
+  margin-top: 5px;
 }
+.experience .item .year {
+  float: right;
+}
+
+
 .award {
   margin-top: 10px;
 }
@@ -142,11 +129,6 @@ a:hover {
 }
 .award .item .year {
   float: right;
-}
-@media (max-width: 861px) {
-  .award ul {
-    padding-left: 20px;
-  }
 }
 .project {
   margin-top: 10px;
