@@ -4,7 +4,7 @@
 }
 a {
   text-decoration: none;
-  color: #ac1313;
+  color: #4387c3;
   transition: all 0.3s;
   target: "_blank";
 }
@@ -12,7 +12,7 @@ a {
 /*  color: inherit;*/
 /*}*/
 a:hover {
-  color: #3877d9;
+  color: #245680;
 }
 .email {
   text-decoration: none;
