@@ -8,6 +8,9 @@ a {
   transition: all 0.3s;
   target: "_blank";
 }
+/*.publication a {*/
+/*  color: inherit;*/
+/*}*/
 a:hover {
   color: #3877d9;
 }
@@ -84,6 +87,7 @@ a:hover {
 }
 .publication .item .information .title {
   max-width: 450px;
+  font-weight: bold;
 }
 .publication .item .information .year {
   padding-left: 10px;
