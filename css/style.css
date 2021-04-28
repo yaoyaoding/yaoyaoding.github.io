@@ -52,6 +52,15 @@ a:hover {
 .namecard .information p {
   padding-bottom: 10px;
 }
+.paper_items {
+  float: right;
+}
+/*.paper_items a {*/
+/*  color: rgba(37, 86, 157, 0.8);*/
+/*}*/
+.paper-conference {
+  font-style: italic;
+}
 @media (max-width: 861px) {
   .namecard .avatar {
     float: none;
@@ -68,9 +77,9 @@ a:hover {
     margin-left: 0;
   }
 }
-.author {
-  color: #4a4a4a;
-}
+/*.author {*/
+/*  color: #4a4a4a;*/
+/*}*/
 .author strong {
   color: #000;
 }
@@ -87,12 +96,18 @@ a:hover {
 }
 .publication .item .information .title {
   max-width: 450px;
-  font-weight: bold;
+  font-weight: 500;
+  /*font-weight: bold;*/
 }
 .publication .item .information .year {
   padding-left: 10px;
   display: block;
   float: right;
+}
+.publication .item .author .author-me {
+  display: inline;
+    font-weight: 500;
+  color: black;
 }
 .publication .item .avatar {
   float: left;

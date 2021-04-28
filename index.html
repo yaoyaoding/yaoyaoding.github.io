@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Kosugi+Maru|Sigmar+One|ZCOOL+KuaiLe|Architects+Daughter|Ubuntu|Merriweather|Noto+Serif:400,600|Noto+Serif+SC:400,600|Roboto:400,700">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
   <title>Yaoyao Ding</title><link rel="shortcut icon" href="/favicon.ico">
 </head>
@@ -34,7 +34,7 @@
 <main class="container">
   <section class="namecard">
     <div class="avatar">
-      <img src="img/head_small.jpg">
+      <img src="img/head_small.jpg" alt="Figure">
     </div>
 
     <div class="information">
@@ -43,9 +43,11 @@
       <p>
         <!--        Master student<br>-->
         Electrical and Computer Engineering, University of Toronto <br>
-<!--        <a href="mailto:yaoyao.ding@mail.utoronto.ca">yaoyao.ding@mail.utoronto.ca</a>-->
-        <a class="fa fa-envelope" href="mailto:yaoyao.ding@mail.utoronto.ca" target="_blank" data-toggle="popover" data-trigger="hover" data-content="email me" data-original-title="" title=""></a>
-          yaoyao.ding [AT] mail.utoronto.ca <br>
+        <a class="fa fa-envelope" href="mailto:yaoyao.ding@mail.utoronto.ca" target="_blank" data-toggle="popover" data-trigger="hover" data-content="email me" data-original-title="" title="">
+          yaoyao.ding@mail.utoronto.ca
+        </a>
+        <br>
+<!--        <span style="display:inline-block; width: 1ch;"></span>-->
         <a class="fa fa-github" href="https://github.com/yaoyaoding" target="_blank" data-toggle="popover" data-trigger="hover" data-content="GitHub" data-original-title="" title="">
           GitHub
         </a>
@@ -60,21 +62,23 @@
     </div>
   </section>
   <section class="publication">
-    <h2>Publications and Manuscripts</h2>
+    <h2>Publications</h2>
     <ul>
       <li class="item">
         <div class="information">
           <div>
             <span class="title"> IOS: Inter-Operator Scheduler for CNN Acceleration </span>
+            <div class="paper_items">
+              <span></span> <a href="https://arxiv.org/abs/2011.01302" target="_blank">Paper</a> |
+              <span></span> <a href="https://www.yaoyaoding.com/ios/" target="_blank">Website</a> |
+              <span></span> <a href="https://github.com/mit-han-lab/inter-operator-scheduler" target="_blank">GitHub</a>
+            </div>
           </div>
           <div class="author">
-            <strong>Yaoyao Ding</strong>, Ligeng Zhu, Zhihao Jia, Gennady Pekhimenko, Song Han
+            <div class="author-me">Yaoyao Ding</div>, Ligeng Zhu, Zhihao Jia, Gennady Pekhimenko, Song Han
           </div>
-          <div>
-            MLSys'21
-            <span></span> [<a href="https://arxiv.org/abs/2011.01302" target="_blank">Arxiv</a>]
-            <span></span> [<a href="https://www.yaoyaoding.com/ios/" target="_blank">Website</a>]
-            <span></span> [<a href="https://github.com/mit-han-lab/inter-operator-scheduler" target="_blank">GitHub</a>]
+          <div class="paper-conference">
+           Conference on Machine Learning and Systems (MLSys), April 2021.
           </div>
         </div>
       </li>
@@ -84,36 +88,38 @@
           <span class="title">
               GAN Compression: Learning Efficient Architectures for Conditional GAN
           </span>
+            <div class="paper_items">
+              <span></span> <a href="https://arxiv.org/abs/2003.08936" target="_blank" rel="noopener">Paper</a> |
+              <span></span> <a href="https://github.com/mit-han-lab/gan-compression" target="_blank" rel="noopener">GitHub</a>
+            </div>
           </div>
           <div class="author">
-            Muyang Li, Ji Lin, <strong>Yaoyao Ding</strong>, Zhijian Liu, Junyan Zhu, Song Han
+            Muyang Li, Ji Lin, <div class="author-me">Yaoyao Ding</div>, Zhijian Liu, Junyan Zhu, Song Han
           </div>
-          <div>
-              CVPR'20
-            <span></span>[<a href="https://arxiv.org/abs/2003.08936" target="_blank" rel="noopener">ArXiv</a>]
-<!--            <span></span> [<a href="" target="_blank" rel="noopener">GitHub</a>]-->
+          <div class="paper-conference">
+              IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June 2020.
           </div>
         </div>
       </li>
-      <li class="item">
-        <div class="information">
-          <div>
-          <span class="title">
-            CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario
-          </span>
-          </div>
-          <div class="author">
-            Huichu Zhang, Siyuan Feng, Chang Liu,
-            <strong>Yaoyao Ding</strong>,
-            Yichen Zhu, Zihan Zhou, Weinan Zhang, Yong Yu, Haiming Jin, Zhenhui Li
-          </div>
-          <div>
-            WWW'19 Demo
-            <span></span>[<a href="https://arxiv.org/abs/1905.05217" target="_blank" rel="noopener">ArXiv</a>]
-            <span></span> [<a href="https://github.com/cityflow-project/CityFlow" target="_blank" rel="noopener">GitHub</a>]
-          </div>
-        </div>
-      </li>
+<!--      <li class="item">-->
+<!--        <div class="information">-->
+<!--          <div>-->
+<!--          <span class="title">-->
+<!--            CityFlow: A Multi-Agent Reinforcement Learning Environment for Large Scale City Traffic Scenario-->
+<!--          </span>-->
+<!--          </div>-->
+<!--          <div class="author">-->
+<!--            Huichu Zhang, Siyuan Feng, Chang Liu,-->
+<!--            <strong>Yaoyao Ding</strong>,-->
+<!--            Yichen Zhu, Zihan Zhou, Weinan Zhang, Yong Yu, Haiming Jin, Zhenhui Li-->
+<!--          </div>-->
+<!--          <div>-->
+<!--            WWW'19 Demo-->
+<!--            <span></span>[<a href="https://arxiv.org/abs/1905.05217" target="_blank" rel="noopener">Paper</a>]-->
+<!--            <span></span> [<a href="https://github.com/cityflow-project/CityFlow" target="_blank" rel="noopener">GitHub</a>]-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </li>-->
     </ul>
   </section>
 
